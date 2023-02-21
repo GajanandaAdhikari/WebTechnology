@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ms. Delightful</title>
+
+        <meta charset="utf-8" />
+        <meta name="description" content="Just a html webpage to learn and have fun!" />
+        <meta name="Author" content="King of Darkness" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2271/2271023.png" />
+    
+        <style>
+            p{
+                text-align: center;
+                font-size: 29px;
+                font-family: Candara, Oswald;
+            }
+            
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 65%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Can we hang out real soon?</p>
+        <img src="https://media.tenor.com/tDRlH6OkewYAAAAC/lee-dongwook-goblin.gif" />
+
+        <div class="buttons">
+            <style>
+                #btn1{
+                    position: fixed;
+                    top: 70%;
+                    left: 50%;
+                }
+
+                #btn2{
+                    position: absolute;
+                    top: 70%;
+                    left: 40%;
+                }
+            </style>
+
+            <button id="btn1">YESSSS BBY</button>
+            <button id="btn2" style="left: 47%;">No</button>
+
+            <script>
+                const btn2 = document.getElementById('btn2');
+                let left = 47;
+                btn2.addEventListener("mouseover",function(){
+                    if (left == 47){
+                        left = 40;
+                    }
+                    else{
+                        left = 47;
+                    }
+
+                    this.style.left = left+'%';
+                });
+
+                const btn1 = document.getElementById('btn1');
+                btn1.addEventListener("click", function(){
+                    alert("YAYYY! THANK U, LOVE U!!!");
+                })
+            </script>
+        </div>
+    </body>
+</html>
