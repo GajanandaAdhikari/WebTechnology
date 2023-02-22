@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>A simple form</title>
+  
+  <meta charset="utf-8" />
+  <meta name="description" content="Learning HTML FORM from youtube -- BRO CODE !" />
+  <meta name="Author" content="King of Darkness" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <style>
+    body{
+        background-color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+      <h2 style="color: blue; text-align: center;">A BASIC FORM</h2>  
+
+      <form>
+        <div>
+        <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Prisha" name="fname" required>
+
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Maharjan" name="lname">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" name="telephone" id="telephone">
+        </div>
+
+        <br>
+        
+        <div>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" placeholder="mprisha@gmail.com" name="email">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="gender">Gender:</label>
+
+            <label for="male">
+                <input type="radio" name="gender" id="male">Male
+            </label>
+
+            <label for="female">
+                <input type="radio" name="gender" id="female">Female
+            </label>
+
+            <label for="others">
+                <input type="radio" name="gender" id="others">Others
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="interest">Interest:</label>
+            
+            <label for="music">
+                <input type="checkbox" name="interest1" id="music" checked>Music
+            </label>
+
+            <label for="sport">
+                <input type="checkbox" name="interest2" id="sports">Sports
+            </label>
+
+            <label for="art">
+                <input type="checkbox" name="interest3" id="art">Art
+            </label>
+
+            <label for="Movies">
+                <input type="checkbox" name="interest4" id="movies">Movies
+            </label>        
+        </div>
+
+        <br>
+
+        <div>
+            <label for="faculty">Faculty:</label>
+            <select name="faculty" id="faculty">
+                <option value="IT">Information Technology</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="Arch">Architecture</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="language">Language:</label>
+            <select name="language" id="language" multiple>
+                <option value="korean">Korean</option>
+                <option value="Nepali">Nepali</option>
+                <option value="Newari">Newari</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="GajanandaMAdhikari.com" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" name="confirm" id="confirm">
+        </div>
+
+        <br><br>
+        
+        <div>
+            <input type="submit">
+            
+            <input type="reset">
+        </div>
+
+      </form>
+
+ </body>
+</html>
